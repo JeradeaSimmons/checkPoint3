@@ -30,9 +30,10 @@ export class Reservations {
          <div class="col-2"> ${this.date.toLocaleDateString('en-US')} </div>
          <div class="col-1">$ ${this.cost}</div>
        
-</section> 
+</section class="border-bottom"> 
+<div class="col-1">
 <section class="row"> <i class="mdi mdi-delete-forever selectable px-2" onclick="app.reservationsController.deleteReservations('${this.id}')"></i>
-
+</div>
 </section>
     
 

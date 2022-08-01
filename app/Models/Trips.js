@@ -27,7 +27,7 @@ export class Trips {
     
 
 
-        <section class="row border-bottom">
+        <section class="row border-bottom elevated">
             <div class"col-4"> <h2>${this.place} | ${this.date.toLocaleDateString('en-US')}</h2></div>
           </section>
 
@@ -82,8 +82,10 @@ export class Trips {
           </section>
 
 
-         <section class="row">
+         <section class="row border-bottom">
+         <div class="col-1">
           <i class="mdi mdi-delete-forever selectable px-2" onclick="app.tripsController.deleteTrips('${this.id}')"></i>
+          </div>
           </section>
         </section>
         
