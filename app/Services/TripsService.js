@@ -12,6 +12,7 @@ class TripsService {
 
     createTrips(newTrips) {
         ProxyState.trips = [...ProxyState.trips, new Trips(newTrips)]
+
     }
     deleteTrips(id) {
         ProxyState.trips = ProxyState.trips.filter(t => t.id != id)

@@ -29,7 +29,7 @@
         </nav>
       </a>
       <form class="row justify-content-center"
-        onsubmit="app.tripsController.createTrips('${this.id}')">
+        onsubmit="app.tripsController.createTrips('${this.id}'), reset()">
         <span class="col-3 "><b> Where to?</b><input class="form-control"
             type="text" minlength="3" maxlength="15" required
             name="(`${this.place}`)"
