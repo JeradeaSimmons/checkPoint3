@@ -25,15 +25,24 @@
         text-light no-select">
         <a class="row navbar-brand ms-3" href="#">
           <div class="col-6">
-            <span class="ms-2"> 🧳Fernweh Vacations</span></div>
+            <span class="ms-2"> ✈️Fernweh Vacations✈️</span></div>
+        </nav>
+      </a>
+      <form class="row justify-content-center"
+        onsubmit="app.tripsController.createTrips('${this.id}')">
+        <span class="col-3 "><b> Where to?</b><input class="form-control"
+            type="text" minlength="3" maxlength="15" required
+            name="(`${this.place}`)"
+            id="place"></span>
+        <span class="col-1"><b>When</b><input class="form-control"
+            type="date" required
+            name="(`${this.date}`)"
+            id="date"></span>
+        <span class="col-2 align-items-baseline"><button
+            class="btn btn-light btn-sm">New Trip</button></span>
+      </form>
 
-          <form onsubmit="app.tripsController.createTrips('${this.id}')">
-            <input class="form-control" type="text" name="destination"
-              id="destination">
-            <button class="btn btn-light btn-sm">New Trip</button>
-          </form>
-        </a>
-      </nav>
+
     </header>
 
 
@@ -44,10 +53,11 @@
 
     <main class="container-fluid">
       <div class="row p-2 mt-3 d-flex
-        justify-content-between">
+        justify-content-center align-content-center">
         <!-- This would be the start of the trip template -->
 
-        <div id="trips" class="col-12 bg-dark text-light elevation-3">
+
+        <div id="trips" class="col-8 bg-dark text-light elevation-3">
 
 
 
@@ -74,11 +84,8 @@
             <div class="col-3">__________________</div>
             <div class="col-2">________</div>
             <div class="col-1">________</div>+
-          </section>
-
-          
-
-          <section class="row d-flex">
+          </section> -->
+          <!-- <section class="row d-flex">
             <p class="col-1 offset-11"><button class="btn text-dark btn-light btn-small">ADD</button></p>
           </section>
 

@@ -6,7 +6,7 @@ class App {
   // valuesController = new ValuesController();
   tripsController = new TripsController()
 
-  reservationsController = new ReservationsController
+  reservationsController = new ReservationsController()
 
 }
 

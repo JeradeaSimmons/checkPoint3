@@ -13,7 +13,10 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/Trips').Trips[]} */
   trips = [
     new Trips({
-      destination: ' Puerto Vallarta',
+      id: 10,
+      place: ' Puerto Vallarta',
+      date: '10/5/2022',
+      notes: 'Hello World'
 
 
     })
@@ -27,12 +30,16 @@ class AppState extends EventEmitter {
       address: '1489 W Party St',
       date: '09/05/27',
       cost: 1000,
-      id: 10
-
-
-
-
-
+      tripsId: 10
+    }),
+    new Reservations({
+      type: 'Rental Car',
+      name: 'cruising',
+      booking: 'CRS12',
+      address: 'same',
+      date: '09/06/2022',
+      cost: 500,
+      tripsId: 10
     })
   ]
 

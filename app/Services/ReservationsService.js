@@ -9,7 +9,9 @@ import { Reservations } from "../Models/reservations.js"
 class ReservationsService {
 
 
-
+    deleteReservations(id) {
+        ProxyState.reservations = ProxyState.reservations.filter(r => r.id != id)
+    }
 
 
     createReservations(newReservations) {
@@ -20,4 +22,4 @@ class ReservationsService {
 
 
 
-export const reservationsService = new ReservationsService
+export const reservationsService = new ReservationsService()
